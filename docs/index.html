@@ -1,22 +1,21 @@
 <style>
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  background: #000; /* prevents edge gaps */
-}
-
-.embed-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+html, body {
+  margin: 0;
   height: 100%;
+  background: #fff;
+}
+.embed-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.embed-container iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
   border: 0;
-  outline: none;
-  display: block;
 }
 </style>
 
@@ -26,4 +25,5 @@
     frameborder="0"
     allowfullscreen>
   </iframe>
+
 </div>
